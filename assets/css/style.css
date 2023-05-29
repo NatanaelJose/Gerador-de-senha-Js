@@ -1,168 +1,231 @@
 * {
-    font-family: "Montserrat", sans-serif;
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    color: #333;
+  font-family: "Montserrat", sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: #333;
 }
 
-html, body {
-    height: auto;
-    min-height: 100vh;
+html,
+body {
+  height: auto;
+  min-height: 100vh;
 }
 
 html {
-    background: linear-gradient(180deg,  #00BFB2 0%,  #005751 100%);
+  background: linear-gradient(180deg, #00bfb2 0%, #005751 100%);
 }
 
 input:focus {
-    outline: none;
+  outline: none;
 }
 
 #register-container {
-    max-width: 900px;
-    min-height: 80vh;
-    margin: 2rem auto;
-    display: flex;
-    box-shadow: -2px -2px 24px -3px rgba(50,50,93,1);   
+  max-width: 900px;
+  min-height: 80vh;
+  margin: 2rem auto;
+  display: flex;
+  box-shadow: -2px -2px 24px -3px rgba(50, 50, 93, 1);
 }
 
 #register-banner {
-    background: url("../img/imagem.jpg");
-    background-size: cover;
-    background-position: center;
-    width: 50%;
+  background: url("../img/imagem.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 50%;
 }
 
 #banner-layer {
-    background-color: rgba(0, 87, 81, 0.5); 
-    height: 100%;
-    padding: 2rem;
-    display: flex;
-    align-items: center;
+  background-color: rgba(0, 87, 81, 0.5);
+  height: 100%;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
 }
 
 #register-banner h1 {
-    color: white;
-    font-size: 4rem;
-    word-spacing: 50rem;
-    user-select: none;
+  color: white;
+  font-size: 4rem;
+  word-spacing: 50rem;
+  user-select: none;
 }
 
 #register-form {
-    background-color: #FDFDFD;
-    padding: 2rem;
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    
+  background-color: #fdfdfd;
+  padding: 2rem;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
 }
 
 #register-form h2 {
-    text-align: center;
-    margin-bottom: 1rem;
-    font-size: 2.2rem;
+  text-align: center;
+  margin-bottom: 1rem;
+  font-size: 2.2rem;
 }
 
 #register-form p {
-    text-align: center;
-    margin-bottom: 1.5rem;
-    font-size: 0.8rem;
-    color: #AAA; 
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-size: 0.8rem;
+  color: #aaa;
 }
 
 .form-control {
-    margin-bottom: 1rem;
-    display: flex;
-    flex-direction: column;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
 }
 
 .form-control label {
-    font-weight: bold;
-    margin-bottom: .6rem;
+  font-weight: bold;
+  margin-bottom: 0.6rem;
 }
 
 .form-control input {
-    border: none;
-    border-bottom: 1px solid #AAA;
-    padding: .6rem 0;
+  border: none;
+  border-bottom: 1px solid #aaa;
+  padding: 0.6rem 0;
 }
 
 #generate-password {
-    font-weight: bold;
-    cursor: pointer;
-    transition: .4s;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.4s;
 }
 
 #generate-password:hover {
-    color: #0099FF;
+  color: #0099ff;
 }
 
 #register-form > #generated-password {
-    border: 1px solid #0099FF;
-    border-radius: 4px;
-    font-weight: bold;
-    font-size: 1.2rem;
-    padding: 0.4rem;
-    color: #333;
-    text-align: center;
-    margin-bottom: 1rem;
-    align-items: center;
+  height: 1em;
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #333;
+  text-align: center;
+  opacity: 0;
+  border: 1px solid #0099ff;
+  border-radius: 4px;
+  padding: 0.4rem;
+  margin-bottom: 1rem;
 }
 
 #register-form > #generated-password p {
-    color: #81d340;
-    margin-bottom: .5rem;
+  color: #81d340;
+  width: 100%;
+  margin-bottom: 0.5rem;
 }
 
 #register-form > #generated-password h4 {
-    margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
 }
-
+/* 
 #register-form > #generated-password input[type="button"] {
-    display: none;
-    color: #81d340;
-    /* align-self: center; */
-    margin-bottom: .5rem;
-    font-weight: bold;
-    width: 69px;
-    align-items: center;
-    justify-content: center;
-    border-color: #FFF;
-    background: #FFF;
-    border-radius: 2rem;
-    max-width: 100%;
-    border: 2px solid #81d340;
-}
+  display: none;
+  color: #81d340;
+  align-self: center;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  width: 69px;
+  align-items: center;
+  justify-content: center;
+  border-color: #fff;
+  background: #fff;
+  border-radius: 2rem;
+  max-width: 100%;
+  border: 2px solid #81d340;
+} */
 
 #register-form input[type="submit"] {
-    background-color: #81d340;
-    color: #FFF;
-    opacity: .8;
-    border: none;
-    border-radius: 2px;
-    padding: 1rem 1.4rem;
-    max-width: 100%;
-    cursor: pointer;
-    transition: .4s;
+  background-color: #81d340;
+  color: #fff;
+  opacity: 0.8;
+  border: none;
+  border-radius: 2px;
+  padding: 1rem 1.4rem;
+  max-width: 100%;
+  cursor: pointer;
+  transition: 0.4s;
 }
 
 #register-form input[type="submit"]:hover {
-    opacity: 1;
+  opacity: 1;
 }
 
-/* @keyframes showTextArea {
-    0% {
-        height: 0em;
-        margin-top: 0em;
-        padding: 0 .5em;
-        border: 0px solid #81d340;
-    };
-    100% {
-        height: 5em;
-        margin-top: 1em;
-        padding: 0 .5em;
-        border: 2px solid #81d340;
-    }
-    
-} */
+@keyframes showPasswordArea {
+  0% {
+    opacity: 0;
+    height: 1em;
+  }
+  80% {
+    height: 8em;
+  }
+  100% {
+    opacity: 1;
+    height: fit-content;
+  }
+}
+@keyframes showTextArea {
+  0% {
+    height: 0em;
+    opacity: 0;
+  }
+  60% {
+    height: 5em;
+  }
+  100% {
+    height: 5em;
+    opacity: 1;
+  }
+}
+.div-password-checkbox {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.div-password-checkbox > div {
+  margin-bottom: 2%;
+  display: flex;
+  width: 100%;
+  justify-content: flex-start;
+}
+.div-password-checkbox > button,
+#register-form > #generated-password input[type="button"] {
+  margin-bottom: 1em;
+  color: rgb(129, 211, 64);
+  background-color: white;
+  padding: 0.3em 2em;
+  border-radius: 1vh;
+  border: 2px solid rgb(129, 211, 64);
+  font-size: 0.7em;
+  font-weight: 700;
+  transition: background-color 0.7s, color 0.5s;
+}
+.div-password-checkbox > button:hover,
+#register-form > #generated-password input[type="button"]:hover {
+  color: white;
+  background-color: rgb(129, 211, 64);
+  cursor: pointer;
+}
+.div-password-checkbox > div > input {
+  margin: 0 3%;
+}
+.div-password-checkbox > div > input:hover {
+  cursor: pointer;
+}
+.div-password-checkbox > div > label {
+  text-align: start;
+  width: 50%;
+  font-size: 0.6em;
+}
+.div-password-result {
+  height: 0;
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
