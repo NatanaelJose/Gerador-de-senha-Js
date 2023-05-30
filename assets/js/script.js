@@ -19,6 +19,7 @@ function editValue(mode) {
       number--;
     }
   }
+  passwordLengthInput.value = number
 }
 function getRandomInt(min, max) {
   min = Math.ceil(min);
