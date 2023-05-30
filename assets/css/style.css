@@ -160,7 +160,7 @@ input:focus {
     height: 1em;
   }
   80% {
-    height: 8em;
+    height:11em;
   }
   100% {
     opacity: 1;
@@ -184,7 +184,7 @@ input:focus {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: flex-start;
 }
 .div-password-checkbox > div {
   margin-bottom: 2%;
@@ -192,7 +192,55 @@ input:focus {
   width: 100%;
   justify-content: flex-start;
 }
-.div-password-checkbox > button,
+.div-password-checkbox > div > div {
+  height: 6vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+.div-password-checkbox > div > input[type="number"] {
+  width: fit-content;
+  color: rgb(129, 211, 64);
+  background-color: white;
+  border: none;
+  font-size: 0.7em;
+  font-weight: 700;
+  transition: background-color 0.7s, color 0.5s;
+  text-align: center;
+}
+.div-password-checkbox > div > div > button:nth-child(1) {
+  padding: 26% 0;
+  width: 2vh;
+  color: rgb(129, 211, 64);
+  background: none;
+  border-radius: 0vh 1vh 1vh 0vh;
+  border: 2px solid rgb(129, 211, 64);
+  font-size: 2vh;
+  height: 5vh;
+  text-align: center;
+  transform: rotate(270deg);
+
+}
+.div-password-checkbox > div > div > button:nth-child(2) {
+  position: relative;
+  padding: 26% 0;
+  width: 2vh;
+  color: rgb(129, 211, 64);
+  background: none;
+  border-radius: 0vh 1vh 1vh 0vh;
+  border: 2px solid rgb(129, 211, 64);
+  font-size: 2vh;
+  height: 5vh;
+  text-align: center;
+  transform: rotate(90deg);
+  top: -15px;
+}
+.div-password-checkbox > div > button,
 #register-form > #generated-password input[type="button"] {
   margin-bottom: 1em;
   color: rgb(129, 211, 64);
@@ -204,13 +252,15 @@ input:focus {
   font-weight: 700;
   transition: background-color 0.7s, color 0.5s;
 }
-.div-password-checkbox > button:hover,
-#register-form > #generated-password input[type="button"]:hover {
+
+.div-password-checkbox > div > button:hover,
+#register-form > #generated-password input[type="button"]:hover,.div-password-checkbox > div > div > button:nth-child(1):hover,
+.div-password-checkbox > div > div > button:nth-child(2):hover {
   color: white;
   background-color: rgb(129, 211, 64);
   cursor: pointer;
 }
-.div-password-checkbox > div > input {
+.div-password-checkbox > div > input[type="checkbox"] {
   margin: 0 3%;
 }
 .div-password-checkbox > div > input:hover {
