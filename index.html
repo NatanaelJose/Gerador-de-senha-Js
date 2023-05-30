@@ -78,7 +78,6 @@
               />
               <label for="upLetter">Letras maiúsculas</label>
             </div>
-
             <div>
               <input
                 checked="true"
@@ -99,7 +98,27 @@
               />
               <label for="simbol">Símbolos</label>
             </div>
-            <button onclick="generatePassword()">Gerar</button>
+            <div
+              style="
+                margin-left: 2%;
+                border-radius: 1vh;
+                border: 2px solid rgb(129, 211, 64);
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-evenly;
+                width: 30%;
+              "
+            >
+              <input type="number" value="8" min="8" max="20" id="passLength" />
+              <div>
+                <button onclick="editValue(1)">></button>
+                <button onclick="editValue(2)">></button>
+              </div>
+            </div>
+            <div style="justify-content: center">
+              <button onclick="generatePassword()">Gerar</button>
+            </div>
           </div>
           <div
             style="display: none"
