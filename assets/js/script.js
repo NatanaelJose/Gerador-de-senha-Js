@@ -9,7 +9,7 @@ let checkDownLetter = document.getElementById("downLetterCheckInput");
 let checkSimbol = document.getElementById("simbolCheckInput");
 //Funções
 function editValue(mode) {
-  let number = parseFloat(passwordLengthInput.value)
+  let number = passwordLengthInput.value
   if (mode == 1) {
     if (number < 20) {
       number++;
